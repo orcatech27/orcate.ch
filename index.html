@@ -86,7 +86,36 @@
               <button role="tab" aria-controls="tab-C">Tab C</button>
               <button role="tab" aria-controls="tab-D" disabled>Tab D</button>
             </menu>
-            <article role="tabpanel" id="tab-A">i need to write something here</article>
+            <article role="tabpanel" id="tab-A">
+              <ul class="tree-view has-collapse-button has-connector has-container">
+                <details open>
+                  <summary>music</summary>
+                  <ul>
+                    <li>
+                      <details>
+                        <summary>choir</summary>
+                        <ul>
+                          <li>ngsmf_ssa.pdf</li>
+                          <li>
+                            <details>
+                              <summary>At</summary>
+                              <ul>
+                                
+                                <li>At</li>
+                                <li>All</li>
+                                <li>Cost</li>
+                              </ul>
+                            </details>
+                          </li>
+                          <li>All</li>
+                          <li>Cost</li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </details>
+              </ul>
+            </article>
             <article role="tabpanel" id="tab-B" hidden>Tab B is active</article>
             <article role="tabpanel" id="tab-C" hidden>Tab C is active</article>
             <article role="tabpanel" id="tab-D" hidden>Tab D is inactive</article>
@@ -102,5 +131,6 @@
         <p class="status-bar-field">Special thanks to <b><a href="https://khangnd.info/about" target="_blank" rel="noopener noreferrer">Khang</a></b> for creating <a href="https://khang-nd.github.io/7.css/" target="_blank" rel="noopener noreferrer">7.css</a>, which this website is based on.</p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
