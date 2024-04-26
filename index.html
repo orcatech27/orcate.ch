@@ -88,11 +88,15 @@
           <section class="tabs">
             <menu role="tablist" aria-label="Tabs Template">
               <button role="tab" aria-controls="home" aria-selected="true">Home</button>
-              <button role="tab" aria-controls="tab-B">Software</button>
-              <button role="tab" aria-controls="tab-C">Files</button>
-              <button role="tab" aria-controls="tab-D" disabled>Tab D</button>
+              <button role="tab" aria-controls="soft" disabled>Software</button>
+              <button role="tab" aria-controls="files">Files</button>
+              <button role="tab" aria-controls="about" disabled>About</button>
             </menu>
-            <article role="tabpanel" id="tab-A">
+            <article role="tabpanel" id="home">home</article>
+            <article role="tabpanel" id="soft" hidden>Software</article>
+            <article role="tabpanel" id="files" hidden>
+              <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Files</p>
+              <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A collection of random personal uploads.</p>
               <ul class="tree-view has-collapse-button has-connector has-container">
                 <details open>
                   <summary>music</summary>
@@ -109,9 +113,7 @@
                 </details>
               </ul>
             </article>
-            <article role="tabpanel" id="tab-B" hidden>Tab B is active</article>
-            <article role="tabpanel" id="tab-C" hidden>Tab C is active</article>
-            <article role="tabpanel" id="tab-D" hidden>Tab D is inactive</article>
+            <article role="tabpanel" id="About" hidden>About</article>
           </section>
           <section class="field-row" style="justify-content: flex-end">
             <button class="default">OK</button>
