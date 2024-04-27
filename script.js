@@ -28,4 +28,10 @@ function tabHandler(e, tabButtons) {
     tabButton.addEventListener("focus", (evt) => {
       tabHandler(evt, templateTabButtons)
     }));
+
+function callBal(id) {
+    const bal = document.getElementById(id);
+    bal.hidden = false;
+
+}
   
