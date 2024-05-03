@@ -66,10 +66,10 @@
           <button style="margin-top: -32px; margin-right: 92px; float: right;" onclick="location.href='a form thing'">Report a bug</button>
           <section class="tabs">
             <menu role="tablist" aria-label="Tabs Template">
-              <button role="tab" aria-controls="home" aria-selected="true">Home</button>
-              <button role="tab" aria-controls="soft" disabled>Software</button>
-              <button role="tab" aria-controls="files">Files</button>
-              <button role="tab" aria-controls="blog">Blog</button>
+              <button role="tab" aria-controls="home" aria-selected="true" onclick="unloadCDN();">Home</button>
+              <button role="tab" aria-controls="soft" onclick="unloadCDN();" disabled>Software</button>
+              <button role="tab" aria-controls="files" onclick="loadCDN();">Files</button>
+              <button role="tab" aria-controls="blog" onclick="unloadCDN();">Blog</button>
             </menu>
             <article role="tabpanel" id="home">
               <img src="https://cdn.orcate.ch/icons/home.ico" style="height: 55px; float: right;" />
@@ -81,23 +81,7 @@
               <img src="https://cdn.orcate.ch/icons/files.ico" style="height: 50px; float: right;" />
               <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Files</p>
               <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A collection of random personal uploads.</p>
-              <ul class="tree-view has-collapse-button has-connector has-container">
-                <details>
-                  <summary>music</summary>
-                  <ul>
-                    <li>
-                      <details>
-                        <summary>choir</summary>
-                        <ul>
-                          <li><a href="https://cdn.orcate.ch/music/choir/ngsmf_ssa.pdf" style="color: #06c; text-decoration: none;" target="_blank" rel="noopener noreferrer">ngsmf_ssa.pdf</a></li>
-                          <li><a href="https://cdn.orcate.ch/music/choir/ahsimonmoine_sab.pdf" style="color: #06c; text-decoration: none;" target="_blank" rel="noopener noreferrer">ahsimonmoine_sab.pdf</a></li>
-                          <li><a href="https://cdn.orcate.ch/music/choir/truth_ssa.pdf" style="color: #06c; text-decoration: none;" target="_blank" rel="noopener noreferrer">truth_ssa.pdf</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                  </ul>
-                </details>
-              </ul>
+              <iframe src="./loading.html" style="border: 1px solid #8e8f8f; width: 734px;" id="cdn-frame"></iframe>
             </article>
             <article role="tabpanel" id="blog" hidden>
               <img src="https://cdn.orcate.ch/icons/blog.ico" style="height: 50px; float: right;" />

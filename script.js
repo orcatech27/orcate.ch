@@ -34,4 +34,15 @@ function callBal(id) {
     bal.hidden = false;
 
 }
+
+function loadCDN() {
+  setTimeout(function() {
+      document.getElementById('cdn-frame').src = 'https://cdn.orcate.ch/';
+  }, 2000);
   
+}
+
+function unloadCDN() {
+  document.getElementById('cdn-frame').src = './loading.html';
+  
+}
