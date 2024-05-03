@@ -2,155 +2,46 @@
 <html style="height: 100%;">
   <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="icon" type="image/x-icon" href="https://cdn.orcate.ch/icons/globe.ico">
     <title>orcatech27 | Malware, Experiments, and More</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body style="background-image: url(Darkest\ Hour.jpg); background-repeat: no-repeat; background-size: cover;">
-    <div class="window glass active" style="max-width: 100%; height: 100%; margin: 20px;">
+  <body style="background-image: url(https://cdn.orcate.ch/images/Flower.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div class="window glass active is-bright" id="blog-2" aria-labelledby="dialog-title" style="width: 30%; margin: auto; margin-top: 230px;">
       <div class="title-bar">
-        <div class="title-bar-text">orcatech27 | Malware, Experiments, and More</div>
+        <div class="title-bar-text" id="dialog-title">orcate.ch Global</div>
         <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Maximize"></button>
-          <button aria-label="Close" onclick="window.close();"></button>
+          <button aria-label="Close" onclick="history.back()"></button>
         </div>
       </div>
-      <div class="window-body">
-        <ul role="menubar" class="can-hover">
-          <li role="menuitem" tabindex="0" aria-haspopup="true">
-            Socials
-            <ul role="menu">
-              <li role="menuitem">
-                <a href="https://youtube.com/orcatech" target="_blank" rel="noopener noreferrer">
-                  YouTube <span>orcatech</span>
-                </a>
-              </li>
-              <li role="menuitem">
-                <a href="https://bit.ly/orcacord" target="_blank" rel="noopener noreferrer">
-                  Discord <span>OrcaTech's Realm</span>
-                </a>
-              </li>
-              <li role="menuitem">
-                <a href="https://www.github.com/orcatech27" target="_blank" rel="noopener noreferrer">
-                  GitHub <span>@orcatech27</span>
-                </a>
-              </li>
-              <li role="menuitem">
-                <a href="https://twitter.com/orcatech27" target="_blank" rel="noopener noreferrer">
-                  Twitter <span>@orcatech27</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li role="menuitem" tabindex="0" aria-haspopup="true">
-            Edit
-            <ul role="menu">
-              <li role="menuitem"><a href="#menubar">Undo</a></li>
-              <li role="menuitem"><a href="#menubar">Copy</a></li>
-              <li role="menuitem"><a href="#menubar">Cut</a></li>
-              <li role="menuitem" class="has-divider"><a href="#menubar">Paste</a></li>
-              <li role="menuitem"><a href="#menubar">Delete</a></li>
-              <li role="menuitem"><a href="#menubar">Find...</a></li>
-              <li role="menuitem"><a href="#menubar">Replace...</a></li>
-              <li role="menuitem"><a href="#menubar">Go to...</a></li>
-            </ul>
-          </li>
-          <li role="menuitem" tabindex="0" aria-haspopup="true">
-            View
-            <ul role="menu">
-              <li role="menuitem" tabindex="0" aria-haspopup="true">
-                Zoom
-                <ul role="menu">
-                  <li role="menuitem"><button>Zoom In</button></li>
-                  <li role="menuitem"><button>Zoom Out</button></li>
-                </ul>
-              </li>
-              <li role="menuitem"><a href="#menubar">Status Bar</a></li>
-            </ul>
-          </li>
-          <li role="menuitem" tabindex="0" aria-haspopup="true">
-            Language
-            <ul role="menu">
-              <li role="menuitem">
-                <img src="en.png" style="width: 18px;"/>
-                <a href="#menubar">English</a>
-              </li>
-              <li role="menuitem">
-                <img src="ru.png" style="width: 18px;"/>
-                <a href="ru/index.html">Русский</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
-        <div style="padding: 6px; height: 85vh;">
-          <section class="tabs">
-            <menu role="tablist" aria-label="Tabs Template">
-              <button role="tab" aria-controls="home" aria-selected="true">Home</button>
-              <button role="tab" aria-controls="soft" disabled>Software</button>
-              <button role="tab" aria-controls="files">Files</button>
-              <button role="tab" aria-controls="blog">Blog</button>
-            </menu>
-            <article role="tabpanel" id="home">
-              <img src="home.ico" style="height: 55px; float: right;" />
-              <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Home</p>
-              <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Welcome to <b>orcatech27's website</b>!</p>
-            </article>
-            <article role="tabpanel" id="soft" hidden>Software</article>
-            <article role="tabpanel" id="files" hidden>
-              <img src="files.ico" style="height: 50px; float: right;" />
-              <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Files</p>
-              <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A collection of random personal uploads.</p>
-              <ul class="tree-view has-collapse-button has-connector has-container">
-                <details>
-                  <summary>music</summary>
-                  <ul>
-                    <li>
-                      <details>
-                        <summary>choir</summary>
-                        <ul>
-                          <li><a href="https://cdn.orcate.ch/music/choir/ngsmf_ssa.pdf" style="color: #06c; text-decoration: none;" target="_blank" rel="noopener noreferrer">ngsmf_ssa.pdf</a></li>
-                          <li><a href="https://cdn.orcate.ch/music/choir/ahsimonmoine_sab.pdf" style="color: #06c; text-decoration: none;" target="_blank" rel="noopener noreferrer">ahsimonmoine_sab.pdf</a></li>
-                          <li><a href="https://cdn.orcate.ch/music/choir/truth_ssa.pdf" style="color: #06c; text-decoration: none;" target="_blank" rel="noopener noreferrer">truth_ssa.pdf</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                  </ul>
-                </details>
-              </ul>
-            </article>
-            <article role="tabpanel" id="blog" hidden>
-              <img src="blog.ico" style="height: 50px; float: right;" />
-              <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Blog</p>
-              <p style="margin: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">bloggg</p>
-              <fieldset>
-                <legend>27.04.2024</legend>
-                <p style="margin-bottom: 5px; margin-top: 0px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px;">Test Blog</p>
-                <p style="margin-top: 5px; margin-bottom: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">summary</p>
-                <button onclick="location.href='#blog-1'" style="margin-bottom: 5px;">Read Blog</button>
-                <div class="window active is-bright" id="blog-1" role="dialog" aria-labelledby="dialog-title">
-                  <div class="title-bar">
-                    <div class="title-bar-text" id="dialog-title">Blog</div>
-                    <div class="title-bar-controls">
-                      <button aria-label="Close" onclick="history.back()"></button>
-                    </div>
-                  </div>
-                  <div class="window-body has-space">
-                    <h2 class="instruction instruction-primary">Test Blog</h2>
-                  </div>
-                  <footer style="text-align: right">
-                    <button onclick="history.back()">Back</button>
-                  </footer>
-                </div>
-              </fieldset>
-            </article>
-          </section>
+      <div class="window-body has-space">
+        <img src="https://cdn.orcate.ch/icons/globe2.ico" style="height: 80px; float: right; margin: 6px; padding: 6px;">
+        <div style="height: 80px; width: 500px; padding: 6px; margin: 6px;">
+          <h2 class="instruction instruction-primary" style="font-size: 25px; float: left; margin: 1px; margin-top: 6px;">Welcome to orcatech27's website!</h2>
+          <h2 class="instruction instruction-primary" style="font-size: 21.05px; float: left; margin: 1px; color: grey;">Добро пожаловать на сайт orcatech27!</h2>
+        </div>
+        <div style="display: table-row;">
+            <div style="width: 122px; display: table-cell; padding: 6px;">
+                <button onclick="location.href='https://orcate.ch/en/'"><img src="https://cdn.orcate.ch/icons/en.png" height="96px"></button>
+                <p style="margin: auto; text-align: center; font-size: 15px;">English</p>
+            </div>
+            <div style="width: 122px; display: table-cell; padding: 6px;">
+                <button onclick="location.href='https://orcate.ch/ru/'" disabled><img src="https://cdn.orcate.ch/icons/ru.png" height="96px"></button>
+                <p style="margin: auto; text-align: center; font-size: 15px;">Русский</p>
+            </div>
+            <div style="width: 122px; display: table-cell; padding: 6px;">
+                <button onclick="location.href='https://bio.orcate.ch/'"><img src="https://cdn.orcate.ch/icons/user.ico" height="96px"></button>
+                <p style="margin: auto; text-align: center; font-size: 15px;">About Me</p>
+            </div>
+            <div style="width: 122px; display: table-cell; padding: 6px;">
+                <button onclick="location.href='https://ru.bio.orcate.ch/'" disabled><img src="https://cdn.orcate.ch/icons/userru.png" height="96px"></button>
+                <p style="margin: auto; text-align: center; font-size: 15px;">Обо Мне (РУС)</p>
+            </div>
         </div>
       </div>
       <div class="status-bar">
-        <p class="status-bar-field">Website hosted by <b><a href="https://www.youtube.com/orcatech" target="_blank" rel="noopener noreferrer">orcatech27</a></b>. Source code is available on my <a href="https://www.github.com/orcatech27/orcate.ch" target="_blank" rel="noopener noreferrer">public github repository</a>.</p>
-        <p class="status-bar-field">Special thanks to <b><a href="https://khangnd.info/about" target="_blank" rel="noopener noreferrer">Khang</a></b> for creating <a href="https://khang-nd.github.io/7.css/" target="_blank" rel="noopener noreferrer">7.css</a>, which this website is based on.</p>
+        <p class="status-bar-field" style="font-size: 9px;">Website hosted by <b><a href="https://www.youtube.com/orcatech" target="_blank" rel="noopener noreferrer">orcatech27</a></b>. Source code is available on my <a href="https://www.github.com/orcatech27/orcate.ch" target="_blank" rel="noopener noreferrer">public github repository</a>.</p>
+        <p class="status-bar-field" style="font-size: 9px;">Special thanks to <b><a href="https://khangnd.info/about" target="_blank" rel="noopener noreferrer">Khang</a></b> for creating <a href="https://khang-nd.github.io/7.css/" target="_blank" rel="noopener noreferrer">7.css</a>, which this website is based on.</p>
       </div>
     </div>
     <script src="script.js"></script>
